@@ -57,7 +57,15 @@
                {% endfor %}
                </tbody>
            </table>
-          {# <a href="{{ path('inventaire_read')}}"><button>Voir inventaire</button></a>#}
+           <div class="navigation">
+               {{ knp_pagination_render(liste) }}
+           </div>
+           <div id="div_chart"></div>
+
+           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+           <script type="text/javascript">
+               {{ gc_draw(piechart, 'div_chart') }}
+           </script>
 
 
 

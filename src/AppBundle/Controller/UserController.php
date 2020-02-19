@@ -29,13 +29,32 @@ class UserController extends Controller
         $form=$form->handleRequest($request);
         if($form->isValid())
         {
+           if($etudiant->getClasse()!=null)
+           {
+           $cl=$em->getRepository(Classe::class)->find($etudiant->getClasse()->getId());
+            $cl->setNbrEtudiants($cl->getNbrEtudiants()-1);
+            $em->persist($cl);
+           }
 
             $id=$request->get('classe');
             $classe=$em->getRepository(Classe::class)->find($id);
             $classe->setNbrEtudiants($classe->getNbrEtudiants()+1);
             $etudiant->setClasse($classe);
+
             $em->persist($etudiant);
             $em->flush();
+
+            $basic  = new \Nexmo\Client\Credentials\Basic('2a815647', 'AFM0bqq8YawybYOD');
+            $client =new \Nexmo\Client($basic);
+
+
+
+            /*$message = $client->message()->send([
+                'to' => '21693051543',
+                'from' => 'Ecole',
+                'text' => 'Vous etes affecté a votre classe'
+            ]);*/
+
             return $this->redirectToRoute('read_etudiants');
         }
 
