@@ -79,7 +79,7 @@
   <component name="ProjectId" id="1XcrFBAEffcocU80VDc4dATV1e9" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,15 +90,15 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Gecole\src\TestBundle\Resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Projet\Gecole\app\Resources\FOSUserBundle\views" />
       <recent name="C:\wamp64\www\Gecole\src\AppBundle\Repository" />
       <recent name="C:\wamp64\www\Gecole\src\AppBundle\Entity" />
       <recent name="C:\wamp64\www\Gecole\web\frontend" />
       <recent name="C:\wamp64\www\Gecole\web\backend" />
-      <recent name="C:\wamp64\www\Gecole\app\Resources\views\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Gecole\src\TestBundle\Resources\views" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -153,7 +153,7 @@
       <workItem from="1581635794391" duration="2951000" />
       <workItem from="1581880192034" duration="2294000" />
       <workItem from="1581883647255" duration="1068000" />
-      <workItem from="1582126378548" duration="3327000" />
+      <workItem from="1582126378548" duration="10185000" />
     </task>
     <servers />
   </component>

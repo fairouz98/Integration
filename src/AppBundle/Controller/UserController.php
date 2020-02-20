@@ -48,12 +48,15 @@ class UserController extends Controller
             $client =new \Nexmo\Client($basic);
 
 
+            //Uncomment to send sms
 
-            /*$message = $client->message()->send([
+            $message = $client->message()->send([
                 'to' => '21693051543',
                 'from' => 'Ecole',
                 'text' => 'Vous etes affecté a votre classe'
-            ]);*/
+            ]);
+
+
 
             return $this->redirectToRoute('read_etudiants');
         }
