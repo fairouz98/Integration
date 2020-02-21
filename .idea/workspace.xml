@@ -61,6 +61,17 @@
       <path value="$PROJECT_DIR$/vendor/twig/extensions" />
       <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
       <path value="$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle" />
+      <path value="$PROJECT_DIR$/vendor/mgilet/notification-bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/comment-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/willdurand/negotiation" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Xic1EuN5HLtt10o1sbwkAyTyg9" />
@@ -84,13 +95,13 @@
       <command value="s doctrine:generate:form" />
       <command value="s doctrine:schema:update" />
       <command value="s generate:bundle" />
-      <command value="s cache:clear" />
       <command value="s doctrine:generate:crud" />
-      <command value="c dump-autoload" />
-      <command value="s doctrine:schema:update --force" />
-      <command value="s server:run" />
-      <command value="s doctrine:generate:entity" />
       <command value="s doctrine:generate:form LibBundle:rech" />
+      <command value="s cache:clear" />
+      <command value="s doctrine:generate:entity" />
+      <command value="c dump-autoload" />
+      <command value="s server:run" />
+      <command value="s doctrine:schema:update --force" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -132,6 +143,8 @@
       <workItem from="1582122074056" duration="8732000" />
       <workItem from="1582139887535" duration="3833000" />
       <workItem from="1582187654681" duration="3375000" />
+      <workItem from="1582218510218" duration="8032000" />
+      <workItem from="1582251377137" duration="4620000" />
     </task>
     <servers />
   </component>
@@ -143,7 +156,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Resources/views/frontend/index.html.twig</url>
-          <line>68</line>
+          <line>69</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

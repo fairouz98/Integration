@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Res list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>R</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for re in res %}
+            <tr>
+                <td><a href="{{ path('res_show', { 'id': re.id }) }}">{{ re.id }}</a></td>
+                <td>{{ re.r }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('res_show', { 'id': re.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('res_edit', { 'id': re.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('res_new') }}">Create a new re</a>
+        </li>
+    </ul>
+{% endblock %}

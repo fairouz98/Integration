@@ -1,0 +1,33 @@
+{% extends 'frontend/index.html.twig' %}
+{% block login %}
+{% endblock %}
+{% block content %}
+    <h1>Livres list</h1>
+
+    <table>
+        
+        <tbody>
+        {% for livre in livres %}
+            <td>
+
+                <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                <div class="card">
+                <img src="{{ asset('frontend/img/dpmt/ii.png')}}" class="card-img-top" alt="g">
+                <div class="card-body">
+                <h5 class="card-title"> {{ livre.titre }}</h5>
+                <a href="{{ path('livre_show', { 'id': livre.id }) }}" class="btn btn-primary">Show</a>
+
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+           </td>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    
+{% endblock %}

@@ -1,0 +1,12 @@
+lib_homepage:
+    path:     /
+    defaults: { _controller: LibBundle:Default:index }
+
+lib_res:
+    resource: "@LibBundle/Resources/config/routing/res.yml"
+    prefix:   /res
+
+lib_categorie:
+    resource: "@LibBundle/Resources/config/routing/categorie.yml"
+    prefix:   /categorie
+

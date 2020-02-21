@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cats list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Cap</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cat in cats %}
+            <tr>
+                <td><a href="{{ path('cat_show', { 'id': cat.id }) }}">{{ cat.id }}</a></td>
+                <td>{{ cat.nom }}</td>
+                <td>{{ cat.cap }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('cat_show', { 'id': cat.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('cat_edit', { 'id': cat.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('cat_new') }}">Create a new cat</a>
+        </li>
+    </ul>
+{% endblock %}

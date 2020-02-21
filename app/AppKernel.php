@@ -21,7 +21,12 @@ class AppKernel extends Kernel
             new LibBundle\LibBundle(),
             new EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle(),
             new TestBundle\TestBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new FOS\CommentBundle\FOSCommentBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle($this),
             new blackknight467\StarRatingBundle\StarRatingBundle(),
+            new Mgilet\NotificationBundle\MgiletNotificationBundle(),
+
 
         ];
 

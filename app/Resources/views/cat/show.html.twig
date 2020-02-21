@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Cat</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ cat.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ cat.nom }}</td>
+            </tr>
+            <tr>
+                <th>Cap</th>
+                <td>{{ cat.cap }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('cat_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('cat_edit', { 'id': cat.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

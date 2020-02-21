@@ -1,0 +1,24 @@
+res_index:
+    path:     /
+    defaults: { _controller: "LibBundle:Res:index" }
+    methods:  GET
+
+res_show:
+    path:     /{id}/show
+    defaults: { _controller: "LibBundle:Res:show" }
+    methods:  GET
+
+res_new:
+    path:     /new
+    defaults: { _controller: "LibBundle:Res:new" }
+    methods:  [GET, POST]
+
+res_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LibBundle:Res:edit" }
+    methods:  [GET, POST]
+
+res_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LibBundle:Res:delete" }
+    methods:  DELETE
