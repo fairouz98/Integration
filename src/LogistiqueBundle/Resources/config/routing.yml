@@ -1,0 +1,13 @@
+logistique_homepage:
+    path:     /
+    defaults: { _controller: LogistiqueBundle:Default:index }
+
+logistique_bus:
+    resource: "@LogistiqueBundle/Resources/config/routing/bus.yml"
+    prefix:   /bus
+
+logistique_ligne:
+    resource: "@LogistiqueBundle/Resources/config/routing/ligne.yml"
+    prefix:   /ligne
+
+

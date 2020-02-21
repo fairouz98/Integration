@@ -1,0 +1,39 @@
+{%  extends 'backend/logistique/index.html.twig' %}
+
+{% block content %}
+    <h1>Buses list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nbrplace</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for bus in buses %}
+            <tr>
+                <td><a href="{{ path('bus_show', { 'id': bus.id }) }}">{{ bus.id }}</a></td>
+                <td>{{ bus.nbrPlace }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('bus_show', { 'id': bus.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('bus_edit', { 'id': bus.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('bus_new') }}">Create a new bus</a>
+        </li>
+    </ul>
+{% endblock %}

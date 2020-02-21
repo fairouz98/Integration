@@ -1,0 +1,24 @@
+ligne_index:
+    path:     /
+    defaults: { _controller: "LogistiqueBundle:ligne:index" }
+    methods:  GET
+
+ligne_show:
+    path:     /{id}/show
+    defaults: { _controller: "LogistiqueBundle:ligne:show" }
+    methods:  GET
+
+ligne_new:
+    path:     /new
+    defaults: { _controller: "LogistiqueBundle:ligne:new" }
+    methods:  [GET, POST]
+
+ligne_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "LogistiqueBundle:ligne:edit" }
+    methods:  [GET, POST]
+
+ligne_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "LogistiqueBundle:ligne:delete" }
+    methods:  DELETE
