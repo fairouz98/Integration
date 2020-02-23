@@ -1,0 +1,3 @@
+lib_homepage:
+    path:     /
+    defaults: { _controller: LibBundle:Default:index }

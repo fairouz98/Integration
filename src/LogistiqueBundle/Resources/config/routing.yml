@@ -1,0 +1,3 @@
+logistique_homepage:
+    path:     /
+    defaults: { _controller: LogistiqueBundle:Default:index }
