@@ -1,3 +1,15 @@
+module:
+    resource: "@ModuleBundle/Resources/config/routing.yml"
+    prefix:   /
+
+logistique:
+    resource: "@LogistiqueBundle/Resources/config/routing.yml"
+    prefix:   /
+
+lib:
+    resource: "@LibBundle/Resources/config/routing.yml"
+    prefix:   /
+
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /

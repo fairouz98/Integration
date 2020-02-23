@@ -1,0 +1,3 @@
+module_homepage:
+    path:     /
+    defaults: { _controller: ModuleBundle:Default:index }

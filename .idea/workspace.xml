@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c758491-fe71-4959-bb14-5c0469b355f2" name="Default Changelist" comment="" />
+    <list default="true" id="9c758491-fe71-4959-bb14-5c0469b355f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_10_02_2020_18_49_c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_23_02_2020_8_46_PM_c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_10_02_2020_18_49_s.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_23_02_2020_8_47_PM_s.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +85,7 @@
   </component>
   <component name="ProjectId" id="1XcrFBAEffcocU80VDc4dATV1e9" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -87,7 +95,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -103,22 +111,22 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="s generate:bundle" />
       <command value="s doctrine:database:create" />
       <command value="s doctrine:schema:create" />
       <command value="s doctrine:generate:entities UserBundle:User" />
       <command value="s doctrine:generate:entities ClassesBundle:Branche" />
       <command value="s generate:form" />
       <command value="s doctrine:generate:form ClassesBundle:Branche" />
-      <command value="s doctrine:generate:entity" />
       <command value="s doctrine:generate:entities ClassesBundle:Classe" />
       <command value="s doctrine:generate:form ClassesBundle:Classe" />
       <command value="s doctrine:schema:update --force*" />
       <command value="s doctrine:generate:entities AppBundle:User" />
-      <command value="s doctrine:schema:update --force" />
       <command value="s generate:controller" />
       <command value="s cache:clear" />
       <command value="c dump-autoload" />
+      <command value="s generate:bundle" />
+      <command value="s doctrine:generate:entity" />
+      <command value="s doctrine:schema:update --force" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -154,6 +162,8 @@
       <workItem from="1581880192034" duration="2294000" />
       <workItem from="1581883647255" duration="1068000" />
       <workItem from="1582126378548" duration="11460000" />
+      <workItem from="1582487096947" duration="208000" />
+      <workItem from="1582487338709" duration="397000" />
     </task>
     <servers />
   </component>

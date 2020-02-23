@@ -6,6 +6,9 @@ imports:
     - { resource: "@BranchesBundle/Resources/config/services.yml" }
     - { resource: "@ClassesBundle/Resources/config/services.yml" }
     - { resource: "@UserBundle/Resources/config/services.yml"}
+    - { resource: "@LibBundle/Resources/config/services.yml" }
+    - { resource: "@LogistiqueBundle/Resources/config/services.yml" }
+    - { resource: "@ModuleBundle/Resources/config/services.yml" }
 
                             # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
